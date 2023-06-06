@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Goal Tracker</title>
+  <meta charset="UTF-8  ">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div>
+    <h1>Goal Tracker</h1>
+    <div class="smalltext">
+    <center><small>Follow your dreams!</small></center>
+    </div>
+    </div>
+    <button id="addGoalButton" class="add-goal-button" onclick="toggleGoalForm()">Add Goal</button>
+    <div id="goalForm" class="hidden">
+      <input type="text" id="goalIdInput" placeholder="Goal ID">
+      <input type="text" id="deadlineInput" placeholder="Deadline">
+      <input type="text" id="goalTitleInput" placeholder="Goal Title">
+      <textarea id="descriptionInput" placeholder="Description"></textarea>
+      <button onclick="addGoal()">Add</button>
+    </div>
+    <div id="goalList">
+      <h2>My Goals</h2>
+      <ul id="goals"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
